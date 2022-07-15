@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #260A53;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-top: #4eb3e5 1px solid;
+  border-bottom: #4eb3e5 1px solid;
+  opacity: 0.8;
+}
+
+.navbar .logo a {
+  font-size: 30px;
+}
+.navbar .logo a:hover {
+  border: none;
+  opacity: 0.4;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+
+/* Header */
+.main {
+  background: url('../VOTLA_website/img/showcase2.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.main .content h1 {
+  font-size: 55px;
+}
+
+.main .content p {
+  font-size: 25px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.5;
+}
+
+.main * {
+  z-index: 10;
+}
+
+.main.sub {
+  height: 40vh;
+}
+
+#navbar {
+  z-index: 9999;
+}
+
+/* Icons */
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: pink;
+  color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.img-hover img:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+/* IMG OVERLAY EFFECT 
+.img-hover .img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  padding: 20px 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-hover .img-overlay:hover{
+  opacity:1;
+}
+
+.img-overlay > * {
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.img-overlay:hover > * {
+  transform: translateY(0);
+} */
+
+
+/* Contact form style */
+.contact-form {
+  width: 100%;
+  padding: 20px 5px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #fff 2px solid;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  color: #fff;
+  height: 100px;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer a:hover { 
+  opacity: 0.6;
+}
+
+.footer .socials > * {
+  margin-right: 30px;
+}
